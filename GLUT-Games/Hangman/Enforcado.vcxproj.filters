@@ -19,15 +19,4 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="soap\soapBasicHttpBinding_USCOREIServiceProxy.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="soap\soapH.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="soap\stdsoap2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
 </Project>

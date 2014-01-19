@@ -83,11 +83,6 @@
   <ItemGroup>
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="soap\soapBasicHttpBinding_USCOREIServiceProxy.h" />
-    <ClInclude Include="soap\soapH.h" />
-    <ClInclude Include="soap\stdsoap2.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

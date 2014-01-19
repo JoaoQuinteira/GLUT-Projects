@@ -143,17 +143,13 @@ void Init(void){
 
 void Reshape(int width, int height){
 	// glViewport(botom, left, width, height)
-	// define parte da janela a ser utilizada pelo OpenGL
 
 	glViewport(0, 0, (GLint) width, (GLint) height);
 
-	// Matriz Projeccao
-	// Matriz onde se define como o mundo e apresentado na janela
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 
 	// gluOrtho2D(left,right,bottom,top); 
-	// projeccao ortogonal 2D, com profundidade (Z) entre -1 e 1
 
 	if(state.ortho)
 	{
@@ -165,8 +161,6 @@ void Reshape(int width, int height){
 	else
 		gluPerspective(state.camera.fov,(GLfloat)width/height,1,100);
 
-	// Matriz Modelview
-	// Matriz onde são realizadas as tranformacoes dos modelos desenhados
 	glMatrixMode(GL_MODELVIEW);
 }
 
@@ -368,7 +362,8 @@ void Draw(void){
 
 		//Writes category label
 		glPushMatrix();	
-		for (int i = 0; i < cat.length(); i++)
+		int catlength=cat.length();
+		for (int i = 0; i < catlength; i++)
 		{
 			glPushMatrix();
 				glTranslatef(-18+i*1.5,13,0);
@@ -394,9 +389,10 @@ void Draw(void){
 			win=true;
 		}
 		if(!gameover){
-		//adicionar as letras ja escolhidas no ecra(na parte de baixo)
+		//writes the already chosen chars on the bottom of the screen
 		glPushMatrix();	
-		for (int i = 0; i < chosenCharsLabel.length(); i++)
+		int chosenCharsLabellength=chosenCharsLabel.length();
+		for (int i = 0; i < chosenCharsLabellength; i++)
 		{
 			glPushMatrix();
 				glTranslatef(-18+i*1.5,-13,0);
@@ -451,7 +447,7 @@ void Draw(void){
 
 void display_help(void){
 	printf("Hangman\n");
-	printf("ESC - Sair\n");
+	printf("ESC - Quit\n");
 }
 
 
