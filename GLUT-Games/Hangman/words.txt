@@ -31,7 +31,10 @@ Capital;Madrid
 Capital;London
 Capital;Washington
 Capital;Rome
-Writer;Saramago
+Literature;Saramago
 Informatics;Hardware
 Informatics;Software
 Cinema;Avatar
+Cinema;Gladiator
+Currency;Euro
+Currency;Usdolar
