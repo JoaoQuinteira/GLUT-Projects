@@ -1,5 +1,10 @@
-//#include "soap\soapBasicHttpBinding_USCOREIServiceProxy.h"
-//#include "soap\BasicHttpBinding_USCOREIService.nsmap"
+/*
+Designed and codded by João Quinteira, j.quinteira93@hotmail.com
+Feel free to use this app as long as you keep my game on it, I kinda deserve it, don't you think? :P
+GitHub: https://github.com/1110557JoaoQuinteira
+Also, feel free to add your own words either by directly editing "words.txt" (be careful, don't leave an empty line at the end!)  or by using the option "Add new Word" on the main menu.
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -520,9 +525,9 @@ void closeWindow1(int a){
 }
 
 void closeWindow(int a){
-	glui->unlink();
+	//glui->unlink();
 	glui->disable();
-	glui->close();
+	//glui->close();
 	glui->hide();
 }
 
@@ -616,6 +621,7 @@ int main(/*int argc, char **argv*/){
 	glui->add_separator();
 	glui->add_button("Add New Word",0,addNewWord);
 	glui->add_button( "Close",0,closeWindow);
+	glui->add_button( "Credits",0); // TODO
 	
 	//glui->set_main_gfx_window( main_window );
 
