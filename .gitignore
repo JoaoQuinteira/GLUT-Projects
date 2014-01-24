@@ -1,4 +1,4 @@
-# Created by http://www.gitignore.io
+## Created by http://www.gitignore.io
 
 ### C++ ###
 # Compiled Object files
@@ -19,7 +19,7 @@
 *.lib
 
 # Executables
-*.exe
+#*.exe
 *.out
 *.app
 
